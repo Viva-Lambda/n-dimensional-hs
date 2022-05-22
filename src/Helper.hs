@@ -146,3 +146,16 @@ takeBetween mnv mxv lst =
                  in els
 
 
+-- converter functions
+
+word2Int :: Word -> Int
+word2Int = fromIntegral
+
+int2Word :: Int -> Word
+int2Word = fromIntegral
+
+word2Scalar :: Word -> Scalar
+word2Scalar = word2Float
+
+scalar2Word :: Scalar -> Word
+scalar2Word = truncate
